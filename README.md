@@ -124,7 +124,7 @@ What I am doing with CMA-ES is sort of a ghetto version of Bayesian optimization
 
         objective_score = -( 1000*(validation_performance_history(end) + 4*median_improvement)) / max([5 log(duration_of_run_in_seconds)] ) / max([7 log(sum(layersizes))]); 
 
-The idea is to find networks that perform well, and which show a steady history of improving on each training epoch. But I also want to favor ones that don't get stock in these horrible CG loops where you can waste 20x the normal epoch time (I am thinking of a way of breaking out of those automatically, since they almost always result in a crappy step anyway), so I penalize the execution time. Finally, I want to optimize memory and get the most per neuron, so I also penalize for number of neurons.
+The idea is to find networks that perform well, and which show a steady history of improving on each training epoch. But I also want to favor ones that don't get stuck in these horrible CG loops where you can waste 20x the normal epoch time (I am thinking of a way of breaking out of those automatically, since they almost always result in a crappy step anyway), so I penalize the execution time. Finally, I want to optimize memory and get the most per neuron, so I also penalize for number of neurons.
 
 Anyway, CMA-ES is really incredible. I attached a PDF explaining it here. It basically gives you total freedom to try anything, and if it is silly or crazy and doesn't help at all, then CMA-ES just won't select for it over time. But if it helps it certain cases and hurts in others, then it will also learn that dependency in the input parameters. 
 
