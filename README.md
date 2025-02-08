@@ -77,7 +77,7 @@ Anyway, hopefully you find these explorations at least moderately interesting.
 **To:** Jeffrey Emanuel  
 **Date:** December 21, 2012 12:29 AM
 
-> Thanks for replying, and I certainly understand that you are very busy. I haven't done careful benchmarking of bsxfun, but it helped me avoid running out of memory on the GPU (often, the line that cause the memory to run out was one with a "repmat" in it). I imagine it is slightly faster simply because you don't have to wait for it to allocate the additional
+> Thanks for replying, and I certainly understand that you are very busy. I haven't done careful benchmarking of bsxfun, but it helped me avoid running out of memory on the GPU (often, the line that cause the memory to run out was one with a "repmat" in it). I imagine it is slightly faster simply because you don't have to wait for it to allocate the additional...
 
 Interesting.  I may give it a try then.
 
