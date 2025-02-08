@@ -1,4 +1,4 @@
-# A Series of Emails Concerning Hessian Free Methods for Deep Learning:
+# A Series of Emails On Hessian Free Methods for Deep Learning:
 
 **From:** Jeffrey Emanuel  
 **To:** James Martens  
